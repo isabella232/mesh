@@ -672,7 +672,7 @@ Installing from source is intended for development/contributing.</p>
 <p>You will then be able to use the tagged image as your image in your <code>values.yaml</code> file.</p>
 <h3 id="deploy-helm-chart">Deploy Helm Chart<a class="headerlink" href="#deploy-helm-chart" title="Permanent link">&para;</a></h3>
 <p>To deploy the Helm Chart, run:</p>
-<pre class="highlight"><code class="language-shell">helm install maesh helm/chart/maesh --set image.pullPolicy=IfNotPresent --set image.tag=latest</code></pre>
+<pre class="highlight"><code class="language-shell">helm install maesh helm/chart/maesh --set controller.image.pullPolicy=IfNotPresent --set controller.image.tag=latest</code></pre>
 
 <h2 id="kubedns-support">KubeDNS support<a class="headerlink" href="#kubedns-support" title="Permanent link">&para;</a></h2>
 <p>Maesh supports KubeDNS:</p>

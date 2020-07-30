@@ -379,8 +379,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#v1x-to-v20" class="md-nav__link">
-    v1.x to v2.0
+  <a href="#v21-to-v30" class="md-nav__link">
+    v2.1 to v3.0
   </a>
   
     <nav class="md-nav">
@@ -389,20 +389,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <li class="md-nav__item">
   <a href="#image-version" class="md-nav__link">
     Image version
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#log-level" class="md-nav__link">
-    Log Level
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#smi-mode" class="md-nav__link">
-    SMI Mode
   </a>
   
 </li>
@@ -440,8 +426,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
       
         <li class="md-nav__item">
-  <a href="#v21-to-v30" class="md-nav__link">
-    v2.1 to v3.0
+  <a href="#v1x-to-v20" class="md-nav__link">
+    v1.x to v2.0
   </a>
   
     <nav class="md-nav">
@@ -450,6 +436,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <li class="md-nav__item">
   <a href="#default-mode_1" class="md-nav__link">
     Default Mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-version_1" class="md-nav__link">
+    Image version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-level" class="md-nav__link">
+    Log Level
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smi-mode" class="md-nav__link">
+    SMI Mode
   </a>
   
 </li>
@@ -592,8 +599,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#v1x-to-v20" class="md-nav__link">
-    v1.x to v2.0
+  <a href="#v21-to-v30" class="md-nav__link">
+    v2.1 to v3.0
   </a>
   
     <nav class="md-nav">
@@ -602,20 +609,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <li class="md-nav__item">
   <a href="#image-version" class="md-nav__link">
     Image version
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#log-level" class="md-nav__link">
-    Log Level
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#smi-mode" class="md-nav__link">
-    SMI Mode
   </a>
   
 </li>
@@ -653,8 +646,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
       
         <li class="md-nav__item">
-  <a href="#v21-to-v30" class="md-nav__link">
-    v2.1 to v3.0
+  <a href="#v1x-to-v20" class="md-nav__link">
+    v1.x to v2.0
   </a>
   
     <nav class="md-nav">
@@ -663,6 +656,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <li class="md-nav__item">
   <a href="#default-mode_1" class="md-nav__link">
     Default Mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-version_1" class="md-nav__link">
+    Image version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-level" class="md-nav__link">
+    Log Level
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smi-mode" class="md-nav__link">
+    SMI Mode
   </a>
   
 </li>
@@ -693,17 +707,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
                 <h1 id="migrations">Migrations<a class="headerlink" href="#migrations" title="Permanent link">&para;</a></h1>
 <p class="subtitle">Helm Chart</p>
-<h2 id="v1x-to-v20">v1.x to v2.0<a class="headerlink" href="#v1x-to-v20" title="Permanent link">&para;</a></h2>
+<h2 id="v21-to-v30">v2.1 to v3.0<a class="headerlink" href="#v21-to-v30" title="Permanent link">&para;</a></h2>
 <h3 id="image-version">Image version<a class="headerlink" href="#image-version" title="Permanent link">&para;</a></h3>
-<p>Since version <code>v1.2</code>, Maesh uses <a href="https://github.com/containous/traefik/">Traefik</a> as a library and does not rely on its 
-Docker image anymore. Therefore, the <code>controller.image</code> and <code>mesh.image</code> options have been removed. You should use the 
-new <code>image</code> option as described in the <a href="../../install/#deploy-helm-chart">documentation</a>.    </p>
-<h3 id="log-level">Log Level<a class="headerlink" href="#log-level" title="Permanent link">&para;</a></h3>
-<p>The <code>controller.logging.debug</code> and <code>mesh.logging</code> options have been removed. You should use the new <code>controller.logLevel</code> 
-and <code>mesh.logLevel</code> options to configure the logging level for the controller and proxies.</p>
-<h3 id="smi-mode">SMI Mode<a class="headerlink" href="#smi-mode" title="Permanent link">&para;</a></h3>
-<p>The <code>smi.enable</code> option has been deprecated and removed. You should use the new and backward compatible ACL mode 
-option as described in the <a href="../../install/#access-control-list">documentation</a>. </p>
+<p>Since version <code>v1.4</code>, Maesh uses plain <a href="https://github.com/containous/traefik/">Traefik</a> Docker image for mesh proxies.
+Therefore, to change the image version used for the controller, or the mesh proxies you should use the <code>controller.image</code> 
+and <code>mesh.image</code> options.</p>
 <h2 id="v20-to-v21">v2.0 to v2.1<a class="headerlink" href="#v20-to-v21" title="Permanent link">&para;</a></h2>
 <h3 id="default-mode">Default Mode<a class="headerlink" href="#default-mode" title="Permanent link">&para;</a></h3>
 <p>The <code>mesh.defaultMode</code> option has been deprecated and will be removed in a future major release.
@@ -712,10 +720,20 @@ You should use the new <code>defaultMode</code> option to configure the default 
 <p>Prior to version <code>v2.1</code>, when the Metrics chart is deployed, Prometheus and Grafana services are exposed by default through 
 a <code>NodePort</code>. For security reasons, those services are not exposed by default anymore. To expose them you should use the 
 new <code>prometheus.service</code> and <code>grafana.service</code> options, more details in the corresponding <a href="https://github.com/containous/maesh/blob/e59b861ac91261b950663410a6223a02fc7e2290/helm/chart/maesh/charts/metrics/values.yaml">values.yaml</a>.</p>
-<h2 id="v21-to-v30">v2.1 to v3.0<a class="headerlink" href="#v21-to-v30" title="Permanent link">&para;</a></h2>
+<h2 id="v1x-to-v20">v1.x to v2.0<a class="headerlink" href="#v1x-to-v20" title="Permanent link">&para;</a></h2>
 <h3 id="default-mode_1">Default Mode<a class="headerlink" href="#default-mode_1" title="Permanent link">&para;</a></h3>
 <p>The <code>mesh.defaultMode</code> option has been removed. You should use the new <code>defaultMode</code> option to configure the default traffic 
 mode for Maesh services.</p>
+<h3 id="image-version_1">Image version<a class="headerlink" href="#image-version_1" title="Permanent link">&para;</a></h3>
+<p>Since version <code>v1.2</code>, Maesh uses <a href="https://github.com/containous/traefik/">Traefik</a> as a library and does not rely on its 
+Docker image anymore. Therefore, the <code>controller.image</code> and <code>mesh.image</code> options have been removed. You should use the 
+new <code>image</code> option as described in the <a href="../../install/#deploy-helm-chart">documentation</a>.    </p>
+<h3 id="log-level">Log Level<a class="headerlink" href="#log-level" title="Permanent link">&para;</a></h3>
+<p>The <code>controller.logging.debug</code> and <code>mesh.logging</code> options have been removed. You should use the new <code>controller.logLevel</code> 
+and <code>mesh.logLevel</code> options to configure the logging level for the controller and proxies.</p>
+<h3 id="smi-mode">SMI Mode<a class="headerlink" href="#smi-mode" title="Permanent link">&para;</a></h3>
+<p>The <code>smi.enable</code> option has been deprecated and removed. You should use the new and backward compatible ACL mode 
+option as described in the <a href="../../install/#access-control-list">documentation</a>.</p>
                 
                   
                 
