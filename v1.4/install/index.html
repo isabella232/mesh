@@ -990,7 +990,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
                 <h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h1>
 <p>To install Traefik Mesh, the installation method is quite simple:</p>
-<pre class="highlight"><code class="language-bash">helm repo add traefik-mesh https://traefik.github.io/mesh/charts
+<pre class="highlight"><code class="language-bash">helm repo add traefik-mesh https://helm.traefik.io/mesh
 helm repo update</code></pre>
 
 <p>Install Traefik Mesh Helm Chart:</p>
@@ -1009,7 +1009,7 @@ Installing from source is intended for development/contributing.</p>
 <p>You will then be able to use the tagged image as your image in your <code>values.yaml</code> file.</p>
 <h3 id="deploy-helm-chart">Deploy Helm Chart<a class="headerlink" href="#deploy-helm-chart" title="Permanent link">&para;</a></h3>
 <p>To deploy the Helm Chart, run:</p>
-<pre class="highlight"><code class="language-shell">helm install traefik-mesh helm/chart/mesh --set controller.image.pullPolicy=IfNotPresent --set controller.image.tag=latest</code></pre>
+<pre class="highlight"><code class="language-shell">helm install traefik-mesh traefik-mesh/traefik-mesh --set controller.image.pullPolicy=IfNotPresent --set controller.image.tag=latest</code></pre>
 
 <h2 id="kubedns-support">KubeDNS support<a class="headerlink" href="#kubedns-support" title="Permanent link">&para;</a></h2>
 <p>Traefik Mesh supports KubeDNS:</p>
